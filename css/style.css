@@ -4,24 +4,161 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
 }
 
-/* Heading */
-.logo-title {
-    border-top: 3px solid black;
-    padding: 10px 20px;
-    width: auto;
-    height: 120px;
-    box-sizing: border-box;
+/* GENERICS */
+main {
+    width: 1000px;
+    margin: 40px auto;
 }
 
+h1 {
+    display: inline;
+    font-size: 3rem;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px 50px;
+}
+
+ul,
+li {
+    padding: 15px 0px
+}
+
+h3 {
+    display: inline;
+}
+
+/* UTILITIES */
 .logo {
     height: 70px;
     vertical-align: middle;
 }
 
-h1 {
-    display: inline;
-    font-size: 2.5rem;
-    vertical-align: middle;
+.top-margin {
+    margin-top: 15px;
+}
+
+/* COMMON PROPERTIES */
+
+.logo-title,
+.button-area,
+.check-list {
+    background-color: lightsteelblue;
+}
+
+h3,
+.black-triangle {
+    font-size: 1.6rem;
+}
+
+.check::before,
+.cross::before {
+    border-radius: 15px;
+    padding: 0px 4px;
+    margin-right: 5px;
+}
+
+.editorial,
+.goals,
+.recruiting,
+.mobile,
+.website,
+.sales,
+#task-button {
+    color: white;
+}
+
+/* Heading */
+.logo-title {
+    border-top: 3px solid black;
+    padding: 15px 20px;
+    width: auto;
+    height: 100px;
+    box-sizing: border-box;
+
+}
+
+/* Main text */
+
+.button-area {
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#task-button,
+#section-button {
+    padding: 4px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+#section-button {
+    border: 1px solid black;
+    color: gray;
+    background-color: white;
+}
+
+#task-button {
+    margin-left: 20px;
+}
+
+.check-list {
+    margin: 3px auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.check::before {
+    content: "\2713";
+    color: green;
+    border: 2px solid green;
+}
+
+.cross::before {
+    content: "\2717";
+    color: red;
+    border: 2px solid red;
+}
+
+.editorial,
+.goals,
+.recruiting,
+.mobile,
+.website,
+.sales {
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+/* CATEGORIES BACKGROUND */
+.editorial,
+#task-button {
+    background-color: dodgerblue;
+}
+
+.goals {
+    background-color: blueviolet;
+}
+
+.recruiting {
+    background-color: mediumseagreen;
+}
+
+.mobile {
+    background-color: orange
+}
+
+.website {
+    background-color: deeppink
+}
+
+.sales {
+    background-color: yellowgreen
 }
