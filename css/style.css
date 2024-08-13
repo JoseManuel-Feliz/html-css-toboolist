@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,17 +7,75 @@
     font-size: 1.1rem;
 }
 
-/* GENERICS */
-main {
-    width: 1000px;
-    margin: 40px auto;
+/* CUSTOM PROPERTIES */
+
+:root {
+    --primary: #f0f0f0;
+    --blue: #1e90ff;
+    --violet: #8a2be2;
+    --lightgreen: #3cb371;
+    --orange: #ffa500;
+    --dark-pink: #ff1493;
+    --lime: #9acd32;
+    --red: #ff0000;
+    --white: #ffffff;
+    --gray: #808080;
+    --green: #008000;
+    --black: #000000;
 }
 
+/* COLOR PALETTE */
+body {
+    background-color: var(--primary);
+}
+
+.logo-wrapper,
+.wrapper-btn,
+.wrapper,
+.btn-section {
+    background-color: var(--white);
+}
+
+.btn-task,
+.editorial {
+    background-color: var(--blue);
+}
+
+.badge,
+.btn-task {
+    color: var(--white);
+}
+
+.goals {
+    background-color: var(--violet);
+}
+
+.recruiting {
+    background-color: var(--lightgreen);
+}
+
+.mobile {
+    background-color: var(--orange);
+}
+
+.website {
+    background-color: var(--dark-pink);
+}
+
+.sales {
+    background-color: var(--lime);
+}
+
+/* GENERICS */
+
 h1 {
-    display: inline;
     font-size: 3rem;
-    vertical-align: middle;
     font-weight: 900;
+}
+
+h1,
+h3 {
+    display: inline;
 }
 
 ul {
@@ -27,34 +85,124 @@ ul {
 
 ul,
 li {
-    padding: 15px 0px
-}
-
-h3 {
-    display: inline;
+    padding: 15px 0px;
 }
 
 /* UTILITIES */
-.logo {
-    height: 70px;
+.container {
+    width: 1000px;
+    margin: 40px auto;
+}
+
+.wrapper-btn {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.wrapper {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.align-middle {
     vertical-align: middle;
+
+}
+
+/* SIZES */
+.fs-sm {
+    font-size: 1.6rem;
+}
+
+/* SPACING */
+.p-20 {
+    padding: 20px;
+
+}
+
+.ms-20 {
+    margin-left: 20px;
+
+}
+
+.my-3 {
+    margin: 3px 0;
 }
 
 .top-margin {
     margin-top: 15px;
 }
 
-/* COMMON PROPERTIES */
-
-.logo-title,
-.button-area,
-.check-list {
-    background-color: lightsteelblue;
+/* BTN BUTTONS */
+.btn {
+    padding: 4px 12px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
-h3,
-.black-triangle {
-    font-size: 1.6rem;
+.btn-task {
+    border: var(--blue);
+}
+
+.btn-section {
+    color: var(--gray);
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--black);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover,
+.btn-section {
+    border: var(--black);
+}
+
+.btn:hover,
+.btn-section,
+.btn-button {
+    border: 1px solid;
+
+}
+
+/*** HEADING ***/
+
+/* Logo */
+
+.logo-wrapper {
+    border-top: 3px solid var(--black);
+    padding: 15px 20px;
+    width: auto;
+    height: 100px;
+}
+
+.logo {
+    height: 70px;
+}
+
+/*** MAIN TEXT ***/
+/* To do list  */
+
+/* Badge */
+
+.badge {
+    font-size: 0.8rem;
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
+
+/**   Check & Cross  **/
+.check::before {
+    content: "\2713";
+    color: var(--green);
+    border-color: var(--green);
+}
+
+.cross::before {
+    content: "\2717";
+    color: var(--red);
+    border-color: var(--red);
 }
 
 .check::before,
@@ -64,101 +212,7 @@ h3,
     margin-right: 5px;
 }
 
-.editorial,
-.goals,
-.recruiting,
-.mobile,
-.website,
-.sales,
-#task-button {
-    color: white;
-}
-
-/* HEADING */
-.logo-title {
-    border-top: 3px solid black;
-    padding: 15px 20px;
-    width: auto;
-    height: 100px;
-    box-sizing: border-box;
-
-}
-
-/* MAIN TEXT */
-
-.button-area {
-    padding: 20px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-#task-button,
-#section-button {
-    padding: 4px 12px;
-    border-radius: 5px;
-    border: none;
-}
-
-#section-button {
-    border: 1px solid black;
-    color: gray;
-    background-color: white;
-}
-
-#task-button {
-    margin-left: 20px;
-}
-
-.check-list {
-    margin: 3px auto;
-    border-radius: 0px 0px 10px 10px;
-}
-
-.check::before {
-    content: "\2713";
-    color: green;
-    border: 2px solid green;
-}
-
+.check::before,
 .cross::before {
-    content: "\2717";
-    color: red;
-    border: 2px solid red;
-}
-
-.editorial,
-.goals,
-.recruiting,
-.mobile,
-.website,
-.sales {
-    padding: 5px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    margin-left: 5px;
-}
-
-/* CATEGORIES BACKGROUND */
-.editorial,
-#task-button {
-    background-color: dodgerblue;
-}
-
-.goals {
-    background-color: blueviolet;
-}
-
-.recruiting {
-    background-color: mediumseagreen;
-}
-
-.mobile {
-    background-color: orange
-}
-
-.website {
-    background-color: deeppink
-}
-
-.sales {
-    background-color: yellowgreen
+    border: 2px solid
 }

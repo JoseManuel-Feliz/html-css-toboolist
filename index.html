@@ -14,52 +14,56 @@
 <body>
     <!-- heading -->
     <header>
-        <div class="logo-title">
-            <img class="logo" src="img/logo.png" alt="Toboolist icon">
-            <h1>Toboolist</h1>
+        <!-- Logo -->
+        <div class="logo-wrapper">
+            <img class="logo align-middle" src="img/logo.png" alt="Toboolist icon">
+            <h1 class="align-middle">Toboolist</h1>
         </div>
     </header>
 
     <!-- main text -->
-    <main>
-
-        <section class="button-area">
-            <button id="task-button" type="button">Add Task</button>
-            <button id="section-button" type="button">Add Section</button>
+    <main class="container">
+        <!-- Buttons -->
+        <section class="wrapper-btn p-20">
+            <a class=" btn btn-task ms-20" type="button">Add Task</a>
+            <a class=" btn btn-section" type="button">Add Section</a>
         </section>
-
-        <section class="check-list">
+        <!-- To do list -->
+        <section class="wrapper my-3">
+            <!-- Add new taks section -->
             <ul>
                 <li class="top-margin">
-                    <span class="black-triangle">&#9662;</span>
-                    <h3>New Task</h3>
+                    <span class="icon-triangle fs-sm">&#9662;</span>
+                    <h3 class="fs-sm">New Task</h3>
                 </li>
-                <li class="check">Quarterly Newsletter<span class="editorial">Editorial</span></li>
+                <li class="check">Quarterly Newsletter<span class="editorial badge">Editorial</span></li>
             </ul>
 
+            <!-- Today task section -->
             <ul>
                 <li>
-                    <span class="black-triangle">&#9662;</span>
-                    <h3>Today</h3>
+                    <span class="icon-triangle fs-sm">&#9662;</span>
+                    <h3 class="fs-sm">Today</h3>
                 </li>
                 <li class="check">
-                    Recruiting blog post<span class="editorial">Editorial</span>
+                    Recruiting blog post<span class="editorial badge">Editorial</span>
                 </li>
-                <li class="check">Mobile app Lunch<span class="goals">Q1-goals</span></li>
-                <li class="cross">interview John H.<span class="recruiting">Recruiting</span></li>
-                <li class="check">Summit update to mobile storefronts<span class="mobile">Mobile</span></li>
+                <li class="check">Mobile app Lunch<span class="goals badge">Q1-goals</span></li>
+                <li class="cross">interview John H.<span class="recruiting badge">Recruiting</span></li>
+                <li class="check">Summit update to mobile storefronts<span class="mobile badge">Mobile</span></li>
             </ul>
 
+            <!-- Upcoming taks section -->
             <ul>
                 <li>
-                    <span class="black-triangle">&#9662;</span>
-                    <h3>Upcoming</h3>
+                    <span class="icon-triangle fs-sm">&#9662;</span>
+                    <h3 class="fs-sm">Upcoming</h3>
                 </li>
-                <li class="cross">Schedule Meeting with Alex<span class="recruiting">Recruting</span>
+                <li class="cross">Schedule Meeting with Alex<span class="recruiting badge">Recruting</span>
                 </li>
-                <li class="check">Homepage refresh<span class="website">Website</span></li>
-                <li class="cross">Onboard nes Sales team members<span class="sales">Sales</span></li>
-                <li class="check">Review editorial character<span class="editorial">Editorial</span></li>
+                <li class="check">Homepage refresh<span class="website badge">Website</span></li>
+                <li class="cross">Onboard nes Sales team members<span class="sales badge">Sales</span></li>
+                <li class="check">Review editorial character<span class="editorial badge">Editorial</span></li>
             </ul>
 
         </section>
